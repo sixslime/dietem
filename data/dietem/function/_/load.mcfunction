@@ -10,7 +10,11 @@ scoreboard players set *dietem load-status 1
 execute unless data storage dietem:settings {PERSIST:true} run function dietem:settings
 
 #declare storage dietem:hook
+#declare storage dietem:implement
 #declare storage dietem:var
+
+# setup
+gamerule keepInventory true
 
 # scoreboards
 scoreboard objectives add -dietem dummy
