@@ -1,0 +1,17 @@
+> #dietem:hook > pre_drop
+--------------------
+ ! when a [player] dies.
+  - after #dietem:implement/drop
+  @ tick
+--------------------
+ [AS] [AT] player
+ -> keep_inventory: bool
+ -> items: SlotItem[]
+ -> xp: int
+--------------------
+ ...
+--------------------
+- called after #dietem:implement/drop (with the same inputs) and after <items> and <xp> are cleared/subtracted from [player].
+
+- may be useful for additional death effects/info/logging that is NOT a 'drop' implementation.
+--------------------

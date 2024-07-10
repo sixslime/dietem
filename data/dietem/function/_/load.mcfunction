@@ -16,6 +16,7 @@ execute unless data storage dietem:settings {PERSIST:true} run function dietem:s
 scoreboard objectives add -dietem dummy
 scoreboard objectives add --dietem dummy
 scoreboard objectives add _dietem-die deathCount
+scoreboard objectives add _dietem-xp xp
 
 # tick
 schedule clear dietem:_/tick
