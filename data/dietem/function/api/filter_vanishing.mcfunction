@@ -18,3 +18,4 @@ data modify storage dietem:out filter_vanishing.result set value []
 execute if data storage dietem:in filter_vanishing.items[] run function dietem:_/impl/filter_vanishing/each_item
 
 data remove storage dietem:in filter_vanishing
+data remove storage dietem:var filter_vanishing
