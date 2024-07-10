@@ -4,7 +4,7 @@
 #--------------------
 # <- result: ItemSlot[]
 #--------------------
-#> emulates the death of an entity to filter out <items> that should vanish.
+#> simulates the death of an entity to filter out <items> that should vanish.
 #--------------------
 #- while simply removing items enchanted with 'minecraft:vanishing_curse' may work for most cases, custom enchantments with the 'prevent_equipment_drop' can exist.
 #- this function ensures that the 'prevent_equipment_drop' enchantment effect is respected.
