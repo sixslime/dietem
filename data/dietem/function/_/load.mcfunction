@@ -1,4 +1,4 @@
-#>dietem:_/load
+#> dietem:_/load
 #--------------------
 # @LOAD
 #--------------------
@@ -16,3 +16,7 @@ execute unless data storage dietem:settings {PERSIST:true} run function dietem:s
 scoreboard objectives add -dietem dummy
 scoreboard objectives add --dietem dummy
 scoreboard objectives add _dietem-die deathCount
+
+# tick
+schedule clear dietem:_/tick
+function dietem:_/tick

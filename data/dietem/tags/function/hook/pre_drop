@@ -1,0 +1,18 @@
+> #dietem:hook > pre_drop
+--------------------
+ ! when a [player] dies. (immediately before #dietem:hook/death)
+  @ tick
+--------------------
+ [AS] [AT] player
+ -> keep_inventory: bool
+--------------------
+ <-> drop_items: SlotItem[]
+ <-> drop_xp: int
+--------------------
+- >drop_items< and >drop_xp< starting value is [player]'s inventory items and total xp value (respectively) at the moment they died.
+
+- >drop_items< and >drop_xp< will be provided as 'items' and 'xp' (respectively) to #dietem:implement/drop.
+
+- <keep_inventory> is equal to the 'keep_inventory' setting.
+  - if <keep_inventory> is false, dietem will clear/subtract >drop_items< and >drop_xp< from [player]. (otherwise, it will not)
+--------------------

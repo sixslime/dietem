@@ -1,0 +1,17 @@
+> #dietem:implement > drop
+--------------------
+ ! when a [player] dies.
+  @ tick
+--------------------
+ [AS] [AT] player
+ -> keep_inventory: bool
+ -> items: SlotItem[]
+ -> xp: int
+--------------------
+> loses/drops <items> and <xp> as [player] due to their death, unless <keep_inventory> is true.
+--------------------
+- if <keep_inventory> is false, <items> and <xp> will be cleared/subtracted from [player] after this function is called.
+- given no implementation, [player] will simply permanantly lose <items> and <xp> (given <keep_inventory> is false).
+--------------------
+ ...
+--------------------
