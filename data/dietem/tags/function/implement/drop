@@ -4,16 +4,16 @@
   @ tick
 --------------------
  [AS] [AT] player
- -> keep_inventory: bool
  -> items: SlotItem[]
  -> xp: int
 --------------------
  ...
 --------------------
-> loses/drops <items> and <xp> as [player] as a result of their death, unless <keep_inventory> is true.
+> loses/drops <items> and <xp> as [player] as a result of their death.
 --------------------
-- if <keep_inventory> is false, <items> and <xp> will be cleared/subtracted from [player] after this function is called.
-- given no implementation, [player] will simply permanantly lose <items> and <xp> (given <keep_inventory> is false).
+- <items> and <xp> will be cleared/subtracted from [player] after this is called.
+- given no implementation, [player] will simply permanantly lose <items> and <xp>.
+  ~ i.e. this function overrides the default player death item/xp loss behavior.
 --------------------
  ...
 --------------------

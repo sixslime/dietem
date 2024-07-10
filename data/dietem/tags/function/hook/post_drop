@@ -5,7 +5,6 @@
   @ tick
 --------------------
  [AS] [AT] player
- -> keep_inventory: bool
  -> items: SlotItem[]
  -> xp: int
 --------------------

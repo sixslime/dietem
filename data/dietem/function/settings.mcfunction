@@ -4,11 +4,11 @@
 data modify storage dietem:settings PERSIST set value false
 
 #>-------------------
-#> setting : 
+#> setting : keep_inventory
 #-------------------
 # ~ 
 #-------------------
 # - 
 #-------------------
-## data modify storage dietem:settings setting set value 0
+ data modify storage dietem:settings keep_inventory set value false
 #>-------------------
