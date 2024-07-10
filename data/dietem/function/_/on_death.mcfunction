@@ -30,4 +30,5 @@ function dietem:_/clear/xp with storage dietem:implement drop[-1].in
 data remove storage dietem:hook pre_drop[-1]
 data remove storage dietem:implement drop[-1]
 data remove storage dietem:hook post_drop[-1]
+
 scoreboard players reset @s _dietem-die
