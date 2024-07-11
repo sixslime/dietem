@@ -1,6 +1,6 @@
 
 # Dependencies
-sism
+* sism
 
 # Supports
 
