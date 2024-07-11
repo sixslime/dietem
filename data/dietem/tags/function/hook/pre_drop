@@ -11,6 +11,7 @@
 --------------------
 - >items< and >xp< starting value is [player]'s inventory items and total xp value (respectively) at the moment they died.
   - if {dietem:settings -> keep_inventory} is true, >items< and >xp< will be empty and 0.
+  - items with '{components:{"minecraft:custom:data":{__:true}}}' are not included in <items> nor are they cleared.
 
 -dietem will automatically clear/subtract >items< and >xp< from [player].
   ~ dietem reads each element of >items<'s "Slot" value and clears that slot.
